@@ -4,6 +4,46 @@
 (function () {
   "use strict";
 
+  /* ---------- Yorug' / qorong'u rejim ---------- */
+  const THEME_KEY = "aberno-theme";
+  const root = document.documentElement;
+  const themeBtn = document.querySelector(".theme-toggle");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const savedTheme = () => {
+    try {
+      return localStorage.getItem(THEME_KEY);
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const setTheme = (theme) => {
+    root.setAttribute("data-theme", theme);
+    if (themeBtn) {
+      const label = theme === "dark" ? "Yorug‘ rejimga o‘tish" : "Qorong‘u rejimga o‘tish";
+      themeBtn.setAttribute("aria-label", label);
+      themeBtn.setAttribute("title", label);
+    }
+  };
+
+  setTheme(root.getAttribute("data-theme") || (systemDark.matches ? "dark" : "light"));
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      setTheme(next);
+      try {
+        localStorage.setItem(THEME_KEY, next);
+      } catch (e) {}
+    });
+  }
+
+  // Foydalanuvchi o'zi tanlamagan bo'lsa, tizim sozlamasiga ergashamiz
+  systemDark.addEventListener("change", (e) => {
+    if (!savedTheme()) setTheme(e.matches ? "dark" : "light");
+  });
+
   const header = document.querySelector(".header");
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav");
