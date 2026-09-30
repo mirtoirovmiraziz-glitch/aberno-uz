@@ -1,0 +1,8 @@
+# Lokal ishlab chiqish fayllari
+.claude/
+test.txt
+
+# Tizim fayllari
+Thumbs.db
+desktop.ini
+.DS_Store

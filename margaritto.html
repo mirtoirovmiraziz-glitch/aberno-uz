@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margaritto — margarin | Aberno</title>
+  <meta name="description" content="Margaritto brendi: pishiriq, qandolatchilik va oshxona uchun margarin.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-margaritto">
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav__link">Bosh sahifa</a>
+        <a href="about.html" class="nav__link">Kompaniya</a>
+        <div class="nav__item">
+          <button class="nav__link drop-toggle" aria-expanded="false" aria-haspopup="true">
+            Brendlar
+            <svg class="nav__caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="bulut.html" class="dropdown__link"><span class="dot dot--bulut"></span><span><strong>Bulut</strong><small>Qog‘oz gigiyena mahsulotlari</small></span></a>
+            <a href="smaylo.html" class="dropdown__link"><span class="dot dot--smaylo"></span><span><strong>Smaylo</strong><small>Saryog‘</small></span></a>
+            <a href="margaritto.html" class="dropdown__link"><span class="dot dot--margaritto"></span><span><strong>Margaritto</strong><small>Margarin</small></span></a>
+          </div>
+        </div>
+        <a href="products.html" class="nav__link">Mahsulotlar</a>
+        <a href="contact.html" class="nav__link">Aloqa</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--dark btn--sm header__cta">Hamkor bo‘lish</a>
+      <button class="burger" aria-label="Menyuni ochish" aria-controls="nav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container brand-hero__grid">
+        <div>
+          <nav class="breadcrumbs" aria-label="Yo‘l"><a href="index.html">Bosh sahifa</a><span>Brendlar</span><span>Margaritto</span></nav>
+          <div class="brand-badge"><span class="brand-badge__icon">M</span>Margaritto brendi</div>
+          <h1>Margaritto — pishiriqlar siri</h1>
+          <p class="page-hero__lead">Margaritto margarini — uy pishiriqlari, qandolatchilik va oshxona uchun. Xamirga mayinlik, taomga yoqimli ta’m beradi.</p>
+          <div class="hero__actions">
+            <a href="#mahsulotlar" class="btn btn--primary">Mahsulotlar</a>
+            <a href="contact.html?mavzu=margaritto" class="btn btn--outline">Ulgurji so‘rov</a>
+          </div>
+        </div>
+        <div class="brand-hero__art">
+          <img src="img/margarine.svg" alt="Margaritto margarini">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Mahsulotlar ===== -->
+    <section class="section" id="mahsulotlar">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Assortiment</span>
+          <h2>Margaritto mahsulotlari</h2>
+          <p>Uy oshxonasi va ishlab chiqarish uchun margarin.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="product reveal" data-brand="margaritto">
+            <div class="product__media"><img src="img/margarine.svg" alt="Margaritto margarini"></div>
+            <div class="product__body">
+              <h3>Margarin</h3>
+              <p>Uy oshxonasi va pishiriqlar uchun qulay qadoqdagi margarin.</p>
+              <div class="product__tags"><span class="tag">Chakana</span><span class="tag">Pishiriq</span></div>
+            </div>
+          </article>
+          <article class="product reveal" data-brand="margaritto">
+            <div class="product__media"><img src="img/margarine.svg" alt="Margaritto qandolatchilik margarini"></div>
+            <div class="product__body">
+              <h3>Qandolatchilik margarini</h3>
+              <p>Xamir, krem va qandolat mahsulotlari tayyorlaydigan korxonalar uchun.</p>
+              <div class="product__tags"><span class="tag">Qandolatchilik</span><span class="tag">Ulgurji</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Qo'llanilishi ===== -->
+    <section class="section section--soft">
+      <div class="container features-split">
+        <div class="panel reveal">
+          <img src="img/margarine.svg" alt="">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Qo‘llanilishi</span>
+          <h2>Pishiriq va qandolatchilik uchun</h2>
+          <p>Margaritto xamir bilan oson ishlanadi va tayyor mahsulotga chiroyli ko‘rinish beradi.</p>
+          <ul class="check-list">
+            <li>Qatlamli va qo‘l xamiri uchun</li>
+            <li>Pechenye, tort va keklar tayyorlashda</li>
+            <li>Kremlar va qandolat mahsulotlarida</li>
+            <li>Oshxonada qovurish va pishirish uchun</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Afzalliklar ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Nega Margaritto</span>
+          <h2>Margaritto afzalliklari</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+            <h3>Barqaror natija</h3>
+            <p>Har safar bir xil sifatli pishiriq natijasi.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>Yoqimli ta’m</h3>
+            <p>Pishiriqlarga mayin ta’m va xushbo‘ylik beradi.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+            <h3>Turli qadoqlar</h3>
+            <p>Uy uchun kichik va korxonalar uchun katta qadoqlar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Margaritto bilan hamkorlik</h2>
+            <p>Nonvoyxona, qandolatchilik korxonalari va distribyutorlar uchun ulgurji shartlar.</p>
+          </div>
+          <div class="cta__actions">
+            <a href="contact.html?mavzu=margaritto" class="btn btn--light">So‘rov yuborish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+          <p>Qog‘oz gigiyena mahsulotlari, qog‘oz xom ashyosi, saryog‘ va margarin ishlab chiqaruvchi kompaniya.</p>
+        </div>
+        <div>
+          <h4>Brendlar</h4>
+          <ul>
+            <li><a href="bulut.html">Bulut</a></li>
+            <li><a href="smaylo.html">Smaylo</a></li>
+            <li><a href="margaritto.html">Margaritto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="about.html">Kompaniya</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998000000000">+998 (00) 000-00-00</a></li>
+            <li><a href="mailto:info@aberno.uz">info@aberno.uz</a></li>
+            <li>O‘zbekiston</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year></span> Aberno. Barcha huquqlar himoyalangan.</span>
+        <span>Bulut · Smaylo · Margaritto</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa — Aberno</title>
+  <meta name="description" content="Aberno bilan bog‘lanish: ulgurji xarid, distribyutorlik va xom ashyo bo‘yicha so‘rovlar.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav__link">Bosh sahifa</a>
+        <a href="about.html" class="nav__link">Kompaniya</a>
+        <div class="nav__item">
+          <button class="nav__link drop-toggle" aria-expanded="false" aria-haspopup="true">
+            Brendlar
+            <svg class="nav__caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="bulut.html" class="dropdown__link"><span class="dot dot--bulut"></span><span><strong>Bulut</strong><small>Qog‘oz gigiyena mahsulotlari</small></span></a>
+            <a href="smaylo.html" class="dropdown__link"><span class="dot dot--smaylo"></span><span><strong>Smaylo</strong><small>Saryog‘</small></span></a>
+            <a href="margaritto.html" class="dropdown__link"><span class="dot dot--margaritto"></span><span><strong>Margaritto</strong><small>Margarin</small></span></a>
+          </div>
+        </div>
+        <a href="products.html" class="nav__link">Mahsulotlar</a>
+        <a href="contact.html" class="nav__link">Aloqa</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--dark btn--sm header__cta">Hamkor bo‘lish</a>
+      <button class="burger" aria-label="Menyuni ochish" aria-controls="nav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Yo‘l"><a href="index.html">Bosh sahifa</a><span>Aloqa</span></nav>
+        <h1>Biz bilan bog‘laning</h1>
+        <p class="page-hero__lead">Ulgurji xarid, distribyutorlik, xom ashyo yoki boshqa savollar bo‘yicha so‘rov qoldiring — mutaxassisimiz siz bilan bog‘lanadi.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:48px;">
+      <div class="container contact-grid">
+        <!-- Kontaktlar -->
+        <div>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <h3>Telefon</h3>
+                <p><a href="tel:+998000000000">+998 (00) 000-00-00</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+              <div>
+                <h3>Elektron pochta</h3>
+                <p><a href="mailto:info@aberno.uz">info@aberno.uz</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <h3>Manzil</h3>
+                <p>O‘zbekiston (aniq manzil kiritiladi)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div>
+                <h3>Ish vaqti</h3>
+                <p>Dushanba – Shanba, 9:00 – 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-placeholder">Xarita shu yerda joylashadi<br>(Google yoki Yandex xarita kodi qo‘yiladi)</div>
+        </div>
+
+        <!-- Forma -->
+        <form class="form" id="contact-form" novalidate>
+          <h2 style="font-size:1.6rem;">So‘rov yuborish</h2>
+          <div class="form__success" role="status">Rahmat! So‘rovingiz qabul qilindi. Tez orada siz bilan bog‘lanamiz.</div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Ismingiz *</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Ism familiya">
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Telefon *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+998 90 123 45 67">
+              <span class="field__error"></span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="company">Kompaniya</label>
+              <input id="company" name="company" type="text" autocomplete="organization" placeholder="Kompaniya nomi">
+              <span class="field__error"></span>
+            </div>
+            <div class="field">
+              <label for="topic">Mavzu *</label>
+              <select id="topic" name="topic">
+                <option value="">Tanlang</option>
+                <option value="bulut">Bulut — qog‘oz mahsulotlari</option>
+                <option value="xom-ashyo">Bulut — yarim tayyor xom ashyo</option>
+                <option value="smaylo">Smaylo — saryog‘</option>
+                <option value="margaritto">Margaritto — margarin</option>
+                <option value="distribyutor">Distribyutorlik</option>
+                <option value="boshqa">Boshqa</option>
+              </select>
+              <span class="field__error"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Xabar *</label>
+            <textarea id="message" name="message" placeholder="Mahsulot, hajm va shahar haqida qisqacha yozing"></textarea>
+            <span class="field__error"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Yuborish</button>
+          <p class="form__note">* — to‘ldirilishi shart bo‘lgan maydonlar.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Savollar</span>
+          <h2>Ko‘p beriladigan savollar</h2>
+        </div>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Qanday qilib distribyutor bo‘lish mumkin?</button>
+            <div class="faq__a"><p>Formada «Distribyutorlik» mavzusini tanlab, hududingiz va kompaniyangiz haqida yozing. Menejerimiz shartlarni tushuntirish uchun bog‘lanadi.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Minimal buyurtma hajmi qancha?</button>
+            <div class="faq__a"><p>Minimal hajm mahsulot turi va brendga bog‘liq. Aniq ma’lumot uchun so‘rov qoldiring.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">So‘rovga qancha vaqtda javob berasiz?</button>
+            <div class="faq__a"><p>Odatda ish vaqti davomida imkon qadar tez javob beramiz.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+          <p>Qog‘oz gigiyena mahsulotlari, qog‘oz xom ashyosi, saryog‘ va margarin ishlab chiqaruvchi kompaniya.</p>
+        </div>
+        <div>
+          <h4>Brendlar</h4>
+          <ul>
+            <li><a href="bulut.html">Bulut</a></li>
+            <li><a href="smaylo.html">Smaylo</a></li>
+            <li><a href="margaritto.html">Margaritto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="about.html">Kompaniya</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998000000000">+998 (00) 000-00-00</a></li>
+            <li><a href="mailto:info@aberno.uz">info@aberno.uz</a></li>
+            <li>O‘zbekiston</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year></span> Aberno. Barcha huquqlar himoyalangan.</span>
+        <span>Bulut · Smaylo · Margaritto</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahsulotlar — Aberno</title>
+  <meta name="description" content="Aberno mahsulotlari katalogi: Bulut qog‘oz mahsulotlari, Smaylo saryog‘i va Margaritto margarini.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav__link">Bosh sahifa</a>
+        <a href="about.html" class="nav__link">Kompaniya</a>
+        <div class="nav__item">
+          <button class="nav__link drop-toggle" aria-expanded="false" aria-haspopup="true">
+            Brendlar
+            <svg class="nav__caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="bulut.html" class="dropdown__link"><span class="dot dot--bulut"></span><span><strong>Bulut</strong><small>Qog‘oz gigiyena mahsulotlari</small></span></a>
+            <a href="smaylo.html" class="dropdown__link"><span class="dot dot--smaylo"></span><span><strong>Smaylo</strong><small>Saryog‘</small></span></a>
+            <a href="margaritto.html" class="dropdown__link"><span class="dot dot--margaritto"></span><span><strong>Margaritto</strong><small>Margarin</small></span></a>
+          </div>
+        </div>
+        <a href="products.html" class="nav__link">Mahsulotlar</a>
+        <a href="contact.html" class="nav__link">Aloqa</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--dark btn--sm header__cta">Hamkor bo‘lish</a>
+      <button class="burger" aria-label="Menyuni ochish" aria-controls="nav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Yo‘l"><a href="index.html">Bosh sahifa</a><span>Mahsulotlar</span></nav>
+        <h1>Mahsulotlar katalogi</h1>
+        <p class="page-hero__lead">Barcha brendlarimiz mahsulotlari bir joyda. Kerakli yo‘nalish yoki brendni tanlang.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:48px;">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Saralash">
+          <button class="filter-btn is-active" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="qogoz">Qog‘oz mahsulotlari</button>
+          <button class="filter-btn" data-filter="yog">Yog‘ mahsulotlari</button>
+          <button class="filter-btn" data-filter="bulut">Bulut</button>
+          <button class="filter-btn" data-filter="smaylo">Smaylo</button>
+          <button class="filter-btn" data-filter="margaritto">Margaritto</button>
+        </div>
+
+        <div class="grid grid--3">
+          <!-- Bulut -->
+          <article class="product" data-brand="bulut" data-category="qogoz">
+            <div class="product__media"><img src="img/napkin.svg" alt="Qog‘oz salfetka"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Qog‘oz salfetkalar</h3>
+              <p>Dasturxon, kafe-restoran va kundalik foydalanish uchun yumshoq salfetkalar.</p>
+              <div class="product__tags"><span class="tag">Uy uchun</span><span class="tag">HoReCa</span></div>
+            </div>
+          </article>
+          <article class="product" data-brand="bulut" data-category="qogoz">
+            <div class="product__media"><img src="img/toilet-roll.svg" alt="Hojatxona qog‘ozi"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Hojatxona qog‘ozi</h3>
+              <p>Yumshoq va mustahkam hojatxona qog‘ozi — uy va jamoat joylari uchun.</p>
+              <div class="product__tags"><span class="tag">Uy uchun</span><span class="tag">Ofis</span></div>
+            </div>
+          </article>
+          <article class="product" data-brand="bulut" data-category="qogoz">
+            <div class="product__media"><img src="img/towel-roll.svg" alt="Rulon salfetka"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut</span>
+              <h3>Rulon salfetka</h3>
+              <p>Oshxona va xo‘jalik ishlari uchun yaxshi shimuvchi qog‘oz rulonlar.</p>
+              <div class="product__tags"><span class="tag">Oshxona</span><span class="tag">HoReCa</span></div>
+            </div>
+          </article>
+          <article class="product" data-brand="bulut" data-category="qogoz">
+            <div class="product__media"><img src="img/jumbo-roll.svg" alt="Yarim tayyor qog‘oz rulon"></div>
+            <div class="product__body">
+              <span class="product__brand">Bulut · B2B</span>
+              <h3>Yarim tayyor xom ashyo</h3>
+              <p>Qog‘oz salfetka ishlab chiqaruvchilar uchun katta (jumbo) rulonlardagi asos qog‘oz.</p>
+              <div class="product__tags"><span class="tag">Ishlab chiqaruvchilar uchun</span><span class="tag">Ulgurji</span></div>
+            </div>
+          </article>
+
+          <!-- Smaylo -->
+          <article class="product" data-brand="smaylo" data-category="yog">
+            <div class="product__media"><img src="img/butter.svg" alt="Smaylo saryog‘i"></div>
+            <div class="product__body">
+              <span class="product__brand">Smaylo</span>
+              <h3>Saryog‘</h3>
+              <p>Nonushta, taomlar va uy pishiriqlari uchun mazali saryog‘.</p>
+              <div class="product__tags"><span class="tag">Chakana</span><span class="tag">Uy uchun</span></div>
+            </div>
+          </article>
+          <article class="product" data-brand="smaylo" data-category="yog">
+            <div class="product__media"><img src="img/butter.svg" alt="Smaylo saryog‘i — katta qadoq"></div>
+            <div class="product__body">
+              <span class="product__brand">Smaylo</span>
+              <h3>Saryog‘ — katta qadoq</h3>
+              <p>Oshxona, nonvoyxona va qandolatchilik korxonalari uchun katta hajmdagi qadoq.</p>
+              <div class="product__tags"><span class="tag">HoReCa</span><span class="tag">Ulgurji</span></div>
+            </div>
+          </article>
+
+          <!-- Margaritto -->
+          <article class="product" data-brand="margaritto" data-category="yog">
+            <div class="product__media"><img src="img/margarine.svg" alt="Margaritto margarini"></div>
+            <div class="product__body">
+              <span class="product__brand">Margaritto</span>
+              <h3>Margarin</h3>
+              <p>Uy oshxonasi va pishiriqlar uchun qulay qadoqdagi margarin.</p>
+              <div class="product__tags"><span class="tag">Chakana</span><span class="tag">Pishiriq</span></div>
+            </div>
+          </article>
+          <article class="product" data-brand="margaritto" data-category="yog">
+            <div class="product__media"><img src="img/margarine.svg" alt="Margaritto qandolatchilik margarini"></div>
+            <div class="product__body">
+              <span class="product__brand">Margaritto</span>
+              <h3>Qandolatchilik margarini</h3>
+              <p>Xamir, krem va qandolat mahsulotlari tayyorlash uchun margarin.</p>
+              <div class="product__tags"><span class="tag">Qandolatchilik</span><span class="tag">Ulgurji</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Narxlar va shartlar bo‘yicha so‘rov</h2>
+            <p>Hajm, qadoq turi va yetkazib berish shartlarini aniqlashtirish uchun so‘rov qoldiring.</p>
+          </div>
+          <div class="cta__actions">
+            <a href="contact.html" class="btn btn--light">So‘rov yuborish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+          <p>Qog‘oz gigiyena mahsulotlari, qog‘oz xom ashyosi, saryog‘ va margarin ishlab chiqaruvchi kompaniya.</p>
+        </div>
+        <div>
+          <h4>Brendlar</h4>
+          <ul>
+            <li><a href="bulut.html">Bulut</a></li>
+            <li><a href="smaylo.html">Smaylo</a></li>
+            <li><a href="margaritto.html">Margaritto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="about.html">Kompaniya</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998000000000">+998 (00) 000-00-00</a></li>
+            <li><a href="mailto:info@aberno.uz">info@aberno.uz</a></li>
+            <li>O‘zbekiston</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year></span> Aberno. Barcha huquqlar himoyalangan.</span>
+        <span>Bulut · Smaylo · Margaritto</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

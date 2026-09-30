@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompaniya haqida — Aberno</title>
+  <meta name="description" content="Aberno kompaniyasi haqida: faoliyat yo‘nalishlari, brendlar va qadriyatlar.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+
+      <nav class="nav" id="nav" aria-label="Asosiy menyu">
+        <a href="index.html" class="nav__link">Bosh sahifa</a>
+        <a href="about.html" class="nav__link">Kompaniya</a>
+        <div class="nav__item">
+          <button class="nav__link drop-toggle" aria-expanded="false" aria-haspopup="true">
+            Brendlar
+            <svg class="nav__caret" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="bulut.html" class="dropdown__link"><span class="dot dot--bulut"></span><span><strong>Bulut</strong><small>Qog‘oz gigiyena mahsulotlari</small></span></a>
+            <a href="smaylo.html" class="dropdown__link"><span class="dot dot--smaylo"></span><span><strong>Smaylo</strong><small>Saryog‘</small></span></a>
+            <a href="margaritto.html" class="dropdown__link"><span class="dot dot--margaritto"></span><span><strong>Margaritto</strong><small>Margarin</small></span></a>
+          </div>
+        </div>
+        <a href="products.html" class="nav__link">Mahsulotlar</a>
+        <a href="contact.html" class="nav__link">Aloqa</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--dark btn--sm header__cta">Hamkor bo‘lish</a>
+      <button class="burger" aria-label="Menyuni ochish" aria-controls="nav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--dark">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Yo‘l"><a href="index.html">Bosh sahifa</a><span>Kompaniya</span></nav>
+        <h1>Aberno haqida</h1>
+        <p class="page-hero__lead">Biz kundalik hayotda har kuni ishlatiladigan mahsulotlarni ishlab chiqaramiz: qog‘oz gigiyena mahsulotlari, qog‘oz xom ashyosi, saryog‘ va margarin.</p>
+      </div>
+    </section>
+
+    <!-- ===== Biz kimmiz ===== -->
+    <section class="section">
+      <div class="container features-split">
+        <div class="reveal">
+          <span class="eyebrow">Biz kimmiz</span>
+          <h2>Ikki sohada ishlaydigan ishlab chiqaruvchi</h2>
+          <p>Aberno — O‘zbekistondagi ishlab chiqarish kompaniyasi. Faoliyatimiz ikki mustaqil yo‘nalishdan iborat va har biri o‘z brendiga ega.</p>
+          <p><strong>Qog‘oz yo‘nalishi</strong> — <a class="link-arrow" href="bulut.html">Bulut</a> brendi ostida qog‘oz salfetkalar, hojatxona qog‘ozi, rulon salfetkalar, shuningdek salfetka ishlab chiqarish uchun yarim tayyor xom ashyo.</p>
+          <p><strong>Yog‘ yo‘nalishi</strong> — <a class="link-arrow" href="smaylo.html">Smaylo</a> brendi ostida saryog‘ va <a class="link-arrow" href="margaritto.html">Margaritto</a> brendi ostida margarin.</p>
+        </div>
+        <div class="panel reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; background:var(--soft);">
+          <img src="img/jumbo-roll.svg" alt="Qog‘oz rulon">
+          <img src="img/napkin.svg" alt="Salfetka">
+          <img src="img/butter.svg" alt="Saryog‘">
+          <img src="img/margarine.svg" alt="Margarin">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Missiya ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="grid grid--2">
+          <div class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <h3>Missiyamiz</h3>
+            <p>Har bir oila va biznesga arzon, qulay va sifatli kundalik mahsulotlarni yetkazib berish.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <h3>Maqsadimiz</h3>
+            <p>Brendlarimizni har bir do‘kon peshtaxtasida ishonchli tanlovga aylantirish va hamkorlar tarmog‘ini kengaytirish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Qadriyatlar ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Qadriyatlar</span>
+          <h2>Bizni nima harakatga keltiradi</h2>
+        </div>
+        <div class="values">
+          <div class="value reveal"><h3>Sifat</h3><p>Xom ashyodan tayyor mahsulotgacha har bir bosqich nazoratda.</p></div>
+          <div class="value reveal"><h3>Ishonch</h3><p>Hamkorlar bilan ochiq va uzoq muddatli munosabatlar.</p></div>
+          <div class="value reveal"><h3>Rivojlanish</h3><p>Ishlab chiqarish va assortimentni doimiy takomillashtirish.</p></div>
+          <div class="value reveal"><h3>Mas’uliyat</h3><p>Iste’molchi salomatligi va atrof-muhitga e’tibor.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Ishlab chiqarish jarayoni ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ishlab chiqarish</span>
+          <h2>Mahsulot qanday tayyorlanadi</h2>
+        </div>
+        <div class="process">
+          <div class="process__step reveal"><h3>Xom ashyo</h3><p>Ishonchli yetkazib beruvchilardan xom ashyo tanlanadi va tekshiriladi.</p></div>
+          <div class="process__step reveal"><h3>Ishlab chiqarish</h3><p>Zamonaviy uskunalarda texnologik talablarga muvofiq ishlab chiqariladi.</p></div>
+          <div class="process__step reveal"><h3>Nazorat</h3><p>Har bir partiya sifat talablariga muvofiqligi bo‘yicha tekshiriladi.</p></div>
+          <div class="process__step reveal"><h3>Yetkazib berish</h3><p>Qadoqlangan mahsulot hamkorlar va savdo nuqtalariga yetkaziladi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Birga ishlaylik</h2>
+            <p>Distribyutorlik, ulgurji xarid yoki xom ashyo bo‘yicha taklifingiz bormi? Biz bilan bog‘laning.</p>
+          </div>
+          <div class="cta__actions">
+            <a href="contact.html" class="btn btn--light">Bog‘lanish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark">A</span>Aberno</a>
+          <p>Qog‘oz gigiyena mahsulotlari, qog‘oz xom ashyosi, saryog‘ va margarin ishlab chiqaruvchi kompaniya.</p>
+        </div>
+        <div>
+          <h4>Brendlar</h4>
+          <ul>
+            <li><a href="bulut.html">Bulut</a></li>
+            <li><a href="smaylo.html">Smaylo</a></li>
+            <li><a href="margaritto.html">Margaritto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="about.html">Kompaniya</a></li>
+            <li><a href="products.html">Mahsulotlar</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Aloqa</h4>
+          <ul>
+            <li><a href="tel:+998000000000">+998 (00) 000-00-00</a></li>
+            <li><a href="mailto:info@aberno.uz">info@aberno.uz</a></li>
+            <li>O‘zbekiston</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year></span> Aberno. Barcha huquqlar himoyalangan.</span>
+        <span>Bulut · Smaylo · Margaritto</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
